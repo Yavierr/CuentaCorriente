@@ -3,25 +3,25 @@ package models;
 public class CuentaCorriente {
 
 	// Caracteristicas
-	private String númeroCuenta;
+	private int nÃºmeroCuenta;
 	private double saldo;
 	private Persona titular;
 
 	// Constructores
-	public CuentaCorriente(String númeroCuenta, double saldo, Persona titular) {
+	public CuentaCorriente(int nÃºmeroCuenta, double saldo, Persona titular) {
 		super();
-		this.númeroCuenta = númeroCuenta;
+		this.nÃºmeroCuenta = nÃºmeroCuenta;
 		this.saldo = saldo;
 		this.titular = titular;
 	}
 
 	// Getters y setters
-	public String getNúmeroCuenta() {
-		return númeroCuenta;
+	public int getNÃºmeroCuenta() {
+		return nÃºmeroCuenta;
 	}
 
-	public void setNúmeroCuenta(String númeroCuenta) {
-		this.númeroCuenta = númeroCuenta;
+	public void setNÃºmeroCuenta(int nÃºmeroCuenta) {
+		this.nÃºmeroCuenta = nÃºmeroCuenta;
 	}
 
 	public double getSaldo() {
@@ -40,7 +40,7 @@ public class CuentaCorriente {
 		this.titular = titular;
 	}
 
-	// Métodos
+	// MÃ©todos
 	public void sumarCantidad(double cantidad) {
 		saldo = saldo + cantidad;
 	}
@@ -52,7 +52,7 @@ public class CuentaCorriente {
 	// toString()
 	@Override
 	public String toString() {
-		return "CuentaCorriente [númeroCuenta=" + númeroCuenta + ", saldo=" + saldo + ", titular=" + titular + "]";
+		return "CuentaCorriente [nÃºmeroCuenta=" + nÃºmeroCuenta + ", saldo=" + saldo + ", titular=" + titular + "]";
 	}
 
 }
