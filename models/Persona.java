@@ -58,11 +58,11 @@ public class Persona {
 		this.cuenta = cuenta;
 	}
 
-	//Métodos
+	//MÃ©todos
 	public void cobrarSueldo() {
 		cuenta.sumarCantidad(sueldo);
 	}
-	public void sacarPasta() {
+	public void sacarPasta(double sueldo) {
 		cuenta.restarCantidad(sueldo);
 	}
 	public void subirSueldo(double nuevoSaldo) {
